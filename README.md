@@ -1,5 +1,5 @@
 # php-tele-bot
 a library for Telegram bot development with php
 
-آموزش کامل به زبان فارسی در کانال زیر :
+نمونه کد و آموزش کامل به زبان فارسی در کانال تلگرام :
 https://t.me/phpbotpro
