@@ -75,7 +75,7 @@ class Form
                         if($this->on['cancel'] !== null) $nextField['keyboard'][] = [$this->cancel_command];
                         $res->sendMessage([
                             'chat_id' => $req->from->id,
-                            'text' => 'لطفا '. $nextField['title']. ' را وارد کنید',
+                            'text' => $nextField['title'],
                             'reply_markup' => json_encode([
                                 'keyboard' => $nextField['keyboard'],
                                 'resize_keyboard' => true
@@ -118,7 +118,7 @@ class Form
         if($this->on['cancel'] !== null) $firstField['keyboard'][] = [$this->cancel_command];
         $res->sendMessage([
             'chat_id' => $req->from->id,
-            'text' => 'لطفا '. $firstField['title']. ' را وارد کنید',
+            'text' => $firstField['title'],
             'reply_markup' => json_encode([
                 'keyboard' => $firstField['keyboard'],
                 'resize_keyboard' => true
